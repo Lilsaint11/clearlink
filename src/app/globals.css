@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styling for the accordion container */
+.accordion {
+  /* Adjust as needed */
+
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styling for individual accordion items */
+.accordion-item {
+  /* Adjust as needed */
+
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+/* Styling for the accordion button */
+.accordion-button {
+  /* Adjust as needed */
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for the expanded content */
+.accordion-content {
+  /* Adjust as needed */
+  display: none; /* Initially hidden */
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
