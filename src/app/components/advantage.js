@@ -15,7 +15,7 @@ const Advantage = () => {
             <div className="flex justify-between">
                 <div className="grid grid-cols-2 gap-8">
                     {advs.map(adv => (
-                        <div className="w-72 flex flex-col gap-2">
+                        <div className="w-72 flex flex-col gap-2" key={adv.title}>
                             <div className="mb-2 bg-[#F9FAFB] h-11 w-11 rounded-full flex items-center justify-center shadow-md shadow-slate-200">
                                 <img src={"/images/"+adv.img+ ".png"} alt="" className="w-5"/>
                             </div>

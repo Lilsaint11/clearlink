@@ -2,17 +2,17 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 const Trial = () => {
     const trialDetails = [
-        {name:"30 days free trial"},
-        {name:"Cancel at any time"},
-        {name:"Access to all features"},
-        {name:"Peronalized onboarding"},
+        {id:1,name:"30 days free trial"},
+        {id:2,name:"Cancel at any time"},
+        {id:3,name:"Access to all features"},
+        {id:4,name:"Peronalized onboarding"},
     ]
     return ( 
         <div className="flex justify-between mb-10">
             <div className="flex flex-col gap-2">
                 <h2 className="text-[32px] font-semibold my-2 text-[#1D2939]">Ready to clear the path to<br/> perfect communication?</h2>
                 {trialDetails.map(trialDetail => (
-                    <div className="flex items-center gap-2" key={trialDetail.name}>
+                    <div className="flex items-center gap-2" key={trialDetail.id}>
                         <IoIosCheckmarkCircleOutline className="text-[20px] text-blue-700"/>
                         <p  className="text-[#667085] leading-[32px]">{trialDetail.name}</p>
                     </div>
